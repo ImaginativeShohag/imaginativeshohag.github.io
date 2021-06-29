@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.liquid
 title: Image caption in Jekyll
 description: Using an image caption in Jekyll
 summary: Using an image caption in Jekyll.

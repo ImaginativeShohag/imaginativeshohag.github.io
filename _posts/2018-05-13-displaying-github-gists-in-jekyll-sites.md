@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.liquid
 title: Displaying GitHub Gists in Jekyll sites
 description: A Liquid tag for Jekyll sites that allows embedding Gists
 summary: A Liquid tag for Jekyll sites that allows embedding Gists.

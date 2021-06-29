@@ -1,46 +1,49 @@
-site: Gesko
-title: Gesko
+site: Imaginative World
+title: Be Imaginative
 description: >-
-  just a minimalist, personal blog
+  Just another weblog by Md. Mahmudul Hasan Shohag.
 googlewebfonts: Fira+Code:wght@400;500;700
 lang: en-US
-timezone: Rome
-repo: https://github.com/p0wex/Gesko # site repo [optional]
+timezone: Dhaka
+repo: https://github.com/ImaginativeShohag/imaginativeshohag.github.io # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 
 author:
-  name: p0wex
-  bio: just a minimalist, personal blog
-  username: p0wex # general username
-  github: p0wex # github username
-  twitter: P0Wex # twitter username
-  email: your-email@email.com # email adress
+  name: Md. Mahmudul Hasan Shohag
+  bio: Software Engineer, Enjoying to the fullest.
+  username: ImaginativeShohag
+  github: ImaginativeShohag
+  twitter: shohag_iw
+  email: imaginativeshohag@email.com
 
 # URL settings
-url: "https://powex.ml" #
-baseurl: "/Gesko" # leave blank if not wishd
-permalink: "https://powex.ml/Gesko/"
-permalink: pretty 
-
+url: "https://imaginativeshohag.github.io"
+baseurl: "" # leave blank if not wished
+permalink: "https://imaginativeshohag.github.io/"
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-
 exclude:
   - .jekyll-cache
   - .obsidian
+  - src
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
   - README.md
   - CONTRIBUTING.md
-  
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
+  - .gitignore
+
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
+  comments: [ "<!-- ", " -->" ]
 
 sass:
   sass_dir: _sass
@@ -50,6 +53,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-postcss
 
 collections:
   pages:
@@ -58,28 +62,29 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
-  
+
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
-      layout: "default"
-  -
-    scope:
+      layout: "default.liquid"
+  - scope:
+      path: ""
+    values:
+      layout: "default.liquid"
+  - scope:
       path: ""
       type: "pages"
     values:
-      layout: "page"
-  -
-    scope:
+      layout: "page.liquid"
+  - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "post.liquid"
 
 relative_links:
-  enabled:     true
+  enabled: true
   collections: false
 
 

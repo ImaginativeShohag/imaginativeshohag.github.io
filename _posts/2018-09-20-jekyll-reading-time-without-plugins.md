@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.liquid
 title: Jekyll reading time without plugins
 description: The reading time indicator for your website
 summary: The reading time indicator for your website.

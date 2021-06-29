@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.liquid
 title: Applying the active class for the current page in Jekyll
 description: How to apply the active class for the current page in Jekyll
 summary: How to apply the active class for the current page in Jekyll.

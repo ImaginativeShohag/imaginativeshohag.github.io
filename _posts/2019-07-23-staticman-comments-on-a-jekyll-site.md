@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.liquid
 title: Staticman comments on a Jekyll site
 description: Generating comments on static sites with Staticman
 summary: Generating comments on static sites with Staticman.

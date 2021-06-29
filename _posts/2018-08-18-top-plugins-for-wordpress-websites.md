@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.liquid
 title: Top plugins for Wordpress websites
 description: Wordpress plugins that I deem as a necessity for everyone
 summary: Wordpress plugins that I deem as a necessity for everyone.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.liquid
 title: Difference between font formats
 description: What is the difference between various font formats?
 summary: What is the difference between various font formats?
