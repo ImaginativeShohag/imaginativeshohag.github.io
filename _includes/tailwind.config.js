@@ -7,6 +7,12 @@ module.exports = {
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Nunito', 'sans-serif'],
+    },
+    container: {
+      center: true,
+    },
     extend: {},
   },
   variants: {

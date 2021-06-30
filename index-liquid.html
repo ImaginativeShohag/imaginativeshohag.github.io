@@ -2,46 +2,50 @@
 layout: default.liquid
 permalink: /index
 ---
+
+<header class="flex justify-between items-center pt-2 pb-8">
+  <div class="">
+    <a class="hover:text-red-500" href="/">
+      <img class="rounded-full" src="https://www.gravatar.com/avatar/b3a22700bc9f23b288af7f1a7404e510?s=24"
+           alt="Profile Image">
+    </a>
+  </div>
+  <div class="">
+    <button class="" title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+</header>
+
 <section id="intro">
-    <div class="flex-row-between">
-        <h1>Hi 👋</h1>
-        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-            <div></div>
-        </button>
-    </div>
-    <div class="bio">
-        Maecenas euismod, ante eu mollis tempus, justo tellus tempus dui, non suscipit tellus diam vel ipsum.
-        Phasellus euismod auctor condimentum. Aenean at ex dolor. Praesent eget venenatis erat, sit amet cursus
-        nulla. Sestibulum rutrum, turpis id aliquam sagittis. <a href="{{ site.baseurl }}/about"> About me</a>
-        </p>
-    </div>
+  <div class="bio">
+    <p class="text-3xl dark:text-gray-50">Assalamu Aalaikum, Peace To You!</p>
+    <p class="text-4xl dark:text-gray-50 font-bold my-2">I'm Md. Mahmudul Hasan Shohag.</p>
+    <p class="text-2xl dark:text-gray-50">Learner, App Developer, Blogger, Coder and <i title="Linux" class="fa fa-linux" aria-hidden="true"></i> Lover.</p>
+    <p class="text-2xl dark:text-gray-50">Trying to be a better Muslim and a better Programmer.</p>
+  </div>
 
-
+  <ul class="dark:text-gray-50 my-5">
+    <li class="inline-block pr-4">
+      read <a class="font-bold hover:text-red-500"
+              href="/blog">Blog</a>
+    </li>
+    <li class="inline-block pr-4">
+      explore <a class="font-bold hover:text-red-500"
+                 href="https://github.com/ImaginativeShohag">GitHub</a>
+    </li>
+    <li class="inline-block pr-4">
+      explore <a class="font-bold hover:text-red-500"
+                 href="https://gitlab.com/ImaginativeShohag">GitLab</a>
+    </li>
+    <li class="inline-block pr-4">
+      see <a class="font-bold hover:text-red-500"
+             href="https://stackoverflow.com/users/2263329/mahmudul-hasan-shohag">StackOverFlow</a>
+    </li>
+    <li class="inline-block pr-4">
+      connect <a class="font-bold hover:text-red-500"
+                 href="https://www.linkedin.com/in/mahmudulhasanshohag/">LinkedIn</a>
+    </li>
+  </ul>
 </section>
 
-<div class="search-article">
-    <label for="search-input" aria-hidden="true">
-        <!-- Magnifier -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-search">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-    </label>
-
-    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
-    <ul id="search-results"></ul>
-</div>
-
-<section class="posts" id="Blog">
-    <h2>BLOG</h2>
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-        </li>
-        {% endfor %}
-    </ul>
-</section>

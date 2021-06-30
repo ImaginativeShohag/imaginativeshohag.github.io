@@ -2,7 +2,7 @@ site: Imaginative World
 title: Be Imaginative
 description: >-
   Just another weblog by Md. Mahmudul Hasan Shohag.
-googlewebfonts: Fira+Code:wght@400;500;700
+googlewebfonts: Nunito:ital,wght@0,400;0,700;1,400;1,700
 lang: en-US
 timezone: Dhaka
 repo: https://github.com/ImaginativeShohag/imaginativeshohag.github.io # site repo [optional]
@@ -40,6 +40,8 @@ exclude:
   - postcss.config.js
   - tailwind.config.js
   - .gitignore
+  - node_modules
+  - yarn.lock
 
 compress_html:
   clippings: all

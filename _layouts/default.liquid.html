@@ -20,9 +20,10 @@ layout: compress
 </script>
 
 
-<body>
-<main>
-    {% include anchor_headings.liquid.html html=content anchorBody="#" %}
+<body class="container bg-gray-50 dark:bg-gray-900">
+
+<main class="m-8">
+  {% include anchor_headings.liquid.html html=content anchorBody="#" %}
 </main>
 
 
@@ -60,35 +61,33 @@ layout: compress
     }
 </script>
 
-
 </body>
 
-<footer class="social-footer">
-    <div class="social-footer-icons">
-        <a href="https://github.com/ImaginativeShohag" title="Github profile" target="_blank"
-           rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="{{site.url}}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-rss" aria-hidden="true"></i></a>
-        <a href="https://github.com/ImaginativeShohag/imaginativeshohag.github.io" title="Browse the code" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-code" aria-hidden="true"></i></a>
-    </div>
-</footer>
+{% comment %}<footer class="social-footer">{% endcomment %}
+  {% comment %}<div class="social-footer-icons">{% endcomment %}
+    {% comment %}<a href="https://github.com/ImaginativeShohag" title="Github profile" target="_blank"{% endcomment %}
+       {% comment %}rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>{% endcomment %}
+    {% comment %}<a href="{{ site.url }}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i{% endcomment %}
+          {% comment %}class="fa fa-rss" aria-hidden="true"></i></a>{% endcomment %}
+    {% comment %}<a href="https://github.com/ImaginativeShohag/imaginativeshohag.github.io" title="Browse the code" target="_blank"{% endcomment %}
+       {% comment %}rel="noopener noreferrer"><i{% endcomment %}
+          {% comment %}class="fa fa-code" aria-hidden="true"></i></a>{% endcomment %}
+  {% comment %}</div>{% endcomment %}
+{% comment %}</footer>{% endcomment %}
 
-
-{% if page.url == '/' %}
-<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
-<script>
-    var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('search-results'),
-        json: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found..',
-        limit: 10,
-        fuzzy: true,
-    })
-</script>
+{% if page.url == '/blog/' %}
+  <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
+  <script>
+      var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('search-results'),
+          json: '{{ site.baseurl }}/search.json',
+          searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+          noResultsText: 'No results found..',
+          limit: 10,
+          fuzzy: true,
+      })
+  </script>
 {% endif %}
-
 
 </html>
