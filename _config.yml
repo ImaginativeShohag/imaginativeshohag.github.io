@@ -17,7 +17,8 @@ author:
   email: imaginativeshohag@email.com
 
 # URL settings
-url: "https://imaginativeshohag.github.io"
+domain: imaginativeshohag.github.io
+url: https://imaginativeshohag.github.io
 baseurl: "" # leave blank if not wished
 permalink: "https://imaginativeshohag.github.io/"
 
