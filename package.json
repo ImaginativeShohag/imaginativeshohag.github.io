@@ -3,12 +3,10 @@
   "lockfileVersion": 1,
   "dependencies": {
     "fuzzysearch": "1.0.3",
-    "postcss-import": "^14.0.2",
     "simple-jekyll-search": "^1.9.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"
   }
 }

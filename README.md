@@ -13,6 +13,15 @@ My personal weblog.
 yarn install
 bundle install
 bundle update github-pages
+
+# Compile CSS and Compile Site
+cd src/tailwindcss
+./build.sh
+bundle exec jekyll build
+
+# Compile & Watch CSS and Run Server & Watch
+cd src/tailwindcss
+./watch.sh
 bundle exec jekyll serve
 ```
 
