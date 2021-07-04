@@ -1,0 +1,16 @@
+---
+layout: none
+permalink: search.json
+---
+[
+{% for post in site.posts %}
+  {
+  "title" : "{{ post.title | escape }}",
+  "category" : "{{ post.category }}",
+  "tags" : "{{ post.tags | join: ', ' }}",
+  "url" : "{% if post.external %}{{ post.blog_link }}{% else %}{{ site.baseurl }}{{ post.url }}{% endif %}",
+  "date" : "{{ post.date | date: "%d %b, %Y" }}",
+  "blog" : "{{ post.blog }}"
+  } {% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

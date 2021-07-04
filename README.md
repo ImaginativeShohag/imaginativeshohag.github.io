@@ -25,6 +25,10 @@ cd src/tailwindcss
 bundle exec jekyll serve
 ```
 
+## Note
+
+All the `.html` files are prefixed with `.liquid.html` or `-liquid.html` and set those file types as Liquid in the IDE. So that the IDE can give the right syntax highlighting and code formatting.
+
 ## Licence
 
 ```

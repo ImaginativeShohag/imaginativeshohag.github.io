@@ -23,6 +23,20 @@ layout: compress
 <body class="container bg-gray-50 dark:bg-gray-900">
 
 <main class="m-8">
+  <header class="flex justify-between items-center pt-2 pb-8">
+    <div class="">
+      <a class="hover:text-red-500" href="/" title="Md. Mahmudul Hasan Shohag">
+        <img class="rounded-full" src="https://www.gravatar.com/avatar/b3a22700bc9f23b288af7f1a7404e510?s=24"
+             alt="Md. Mahmudul Hasan Shohag">
+      </a>
+    </div>
+    <div class="">
+      <button class="" title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+        <div></div>
+      </button>
+    </div>
+  </header>
+
   {% include anchor_headings.liquid.html html=content anchorBody="#" %}
 </main>
 
@@ -75,14 +89,14 @@ layout: compress
   {% comment %}</div>{% endcomment %}
 {% comment %}</footer>{% endcomment %}
 
-{% if page.url == '/blog/' %}
+{% if page.url == '/blog' %}
   <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
   <script>
       var sjs = SimpleJekyllSearch({
           searchInput: document.getElementById('search-input'),
           resultsContainer: document.getElementById('search-results'),
           json: '{{ site.baseurl }}/search.json',
-          searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+          searchResultTemplate: '<li class="my-2 font-bold text-red-500 hover:text-red-700"><a href="{url}">{title}</a></li>',
           noResultsText: 'No results found..',
           limit: 10,
           fuzzy: true,

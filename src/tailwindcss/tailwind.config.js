@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Nunito', 'sans-serif'],
+      mono: ['JetBrains Mono', 'monospace'],
     },
     container: {
       center: true,
