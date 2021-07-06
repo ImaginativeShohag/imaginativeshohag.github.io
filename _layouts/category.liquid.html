@@ -2,37 +2,40 @@
 layout: default.liquid
 ---
 
+<section class="posts max-w-screen-md m-auto text-gray-900 dark:text-gray-50">
 
-<section class="posts">
-  <div class="flex-row-between">
-    <h1>Category #{{ page.category }}</h1>
-    <a href="{{ site.github.url }}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-  </div>
-  <ul>
+  <h1 class="title text-3xl font-bold mb-8 text-center">{{ page.category | capitalize }}</h1>
+
+  <ul class="mt-8 mb-16 text-gray-900 dark:text-gray-50">
     {% for post in site.posts %}
       {% if post.categories contains page.category %}
-        <li><a class="post" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%b %-d, %Y" }}
-          </time>
+        <li class="my-3">
+          <time class="font-mono text-xs block md:inline"
+                datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time>
+          <a class="md:ml-2 font-bold text-red-500 hover:text-red-700"
+             href="{% if post.external %}{{ post.blog_link }}{% else %}{{ site.baseurl }}{{ post.url }}{% endif %}">
+            {% if post.external %}<i class="fa fa-external-link-square" aria-hidden="true"></i>{% endif %}
+            {{ post.title }}
+          </a>
+          {% if post.external %}
+            <span class="block md:inline text-xs italic">— <span class="font-mono text-xs">{{ post.blog }}</span></span>
+          {% endif %}
         </li>
       {% endif %}
     {% endfor %}
   </ul>
 </section>
 
-<section class="categories">
-  <h2>All categories:</h2>
-  {% assign categories = site.categories | sort %}
-  {% for category in categories %}
-  <ul>
-    <li>
-      <a class="posts"
-         href=" {{ site.baseurl }}/category/{{ category | first | slugify }}/">{{ category[0] | replace: '-', ' '
-        }} ({{ category | last | size
-        }}){% unless forloop.last %}, {% endunless %}
-        {% endfor %}
+<section class="categories max-w-screen-md m-auto text-gray-900 dark:text-gray-50">
+
+  <h2 class="title text-2xl font-bold mb-8 text-center">All Categories</h2>
+
+  <div class="text-sm">
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+      <a class="font-bold inline-block font-mono iw-link rounded-full mx-0.5 my-1 py-2 px-4 bg-gray-200 dark:bg-gray-800" href=" {{ site.baseurl }}/category/{{ category | first | slugify }}/">
+        {{ category[0] | replace: '-', ' ' | capitalize }} <span class="text-gray-800 dark:text-gray-200">({{ category | last | size }})</span>
       </a>
-    </li>
-  </ul>
+    {% endfor %}
+  </div>
 </section>
