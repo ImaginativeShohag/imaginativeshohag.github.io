@@ -3,9 +3,9 @@ layout: post.liquid
 title: Difference between font formats
 description: What is the difference between various font formats?
 summary: What is the difference between various font formats?
-tags: typography
+tags: apple mango orange
 minute: 1
-category: font
+categories: markdown markup
 ---
 
 # h1
@@ -17,6 +17,8 @@ category: font
 #### h4
 
 ##### h5
+
+###### h5
 
 ---
 
@@ -114,5 +116,11 @@ But I have to admit, tasks lists are my favorite:
 - [ ] This is an incomplete item
 
 When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned right-aligned right-aligned right-aligned right-aligned right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 And, of course emoji!

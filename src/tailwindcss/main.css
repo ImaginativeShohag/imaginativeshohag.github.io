@@ -1,3 +1,126 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.article {
+    @apply font-serif
+}
+
+.article h1 {
+    @apply font-sans text-3xl font-bold border-b-2 pb-1.5 mt-6 mb-4
+}
+
+.article h2 {
+    @apply font-sans text-2xl font-bold border-b-2 pb-1.5 mt-6 mb-4
+}
+
+.article h3 {
+    @apply font-sans text-xl font-bold pb-1.5 mt-6 mb-4
+}
+
+.article h4 {
+    @apply font-sans text-base font-bold mt-6 mb-4
+}
+
+.article h5 {
+    @apply font-sans text-sm font-bold mt-6 mb-4
+}
+
+.article h6 {
+    @apply font-sans text-xs font-bold mt-6 mb-4
+}
+
+.article p {
+    @apply mt-0 mb-4
+}
+
+.article p > a {
+    @apply text-red-500 hover:underline
+}
+
+.article strong {
+
+}
+
+.article em {
+
+}
+
+.article ol {
+    @apply list-decimal pl-8 mb-4
+}
+
+.article ul {
+    @apply list-disc pl-8 mb-4
+}
+
+.article ul.task-list {
+    @apply pl-0
+}
+
+.article li.task-list-item {
+    @apply list-none
+}
+
+.article li input {
+    @apply ml-1 mr-2
+}
+
+.article blockquote {
+    @apply px-4 border-l-4 text-gray-600 dark:text-gray-400 mb-4
+}
+
+.article code {
+
+}
+
+.article img {
+    @apply rounded-md
+}
+
+.article hr {
+    @apply mt-6 mb-6
+}
+
+.article p > code {
+    @apply rounded-md text-sm bg-gray-200 dark:bg-gray-800 py-0.5 px-1.5
+}
+
+.article div.highlight {
+    @apply mb-4
+}
+
+.article pre.highlight {
+    @apply p-4 rounded-md text-sm bg-gray-200 dark:bg-gray-800
+}
+
+.article table {
+    @apply border-collapse border border-gray-300 dark:border-gray-700 table-auto w-full mb-4
+}
+
+.article th, .article td {
+    @apply border border-gray-300 dark:border-gray-700 py-2 px-4
+}
+
+.article thead {
+    @apply font-bold
+}
+
+.iw-link {
+    @apply text-red-500 hover:text-red-700
+}
+
+h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
+    @apply hidden
+}
+
+/* ********************************
+ * Anchor
+ ******************************** */
+h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover .anchor {
+    @apply inline
+}
+
+.anchor {
+    @apply text-red-500 hover:text-red-700
+}

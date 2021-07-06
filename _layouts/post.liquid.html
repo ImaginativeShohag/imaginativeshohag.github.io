@@ -2,42 +2,56 @@
 layout: default.liquid
 ---
 
-
-<section class="post">
-  <div class="flex-row-between">
-    <a href="{{ site.baseurl }}">« back</a>
-    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-      <div></div>
-    </button>
+<section class="meta max-w-screen-md m-auto text-gray-900 dark:text-gray-50 mb-8 text-center">
+  <div class="text-sm">
+    Published at
+    <time class="font-bold font-mono" datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%d %b, %Y" }}</time>
+    <span class="block sm:inline">
+    under
+      {% for category in page.categories %}
+      <a class="font-bold font-mono iw-link" href="{{ site.baseurl }}/category/{{ category }}">
+        {{ category | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </span>
   </div>
-  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.minute }}'
-    reading
-  </time>
-  <h1 class="title">{{ page.title }}</h1>
-  <span class="meta">
+
+  <h1 class="title text-3xl font-bold">{{ page.title }}</h1>
+
+  <div class="tags text-sm">
     {% for tag in page.tags %}
-      <a
-      href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+      <a class="font-bold font-mono iw-link" href="{{ site.baseurl }}/tag/{{ tag }}">#{{ tag }}</a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="post article max-w-screen-md m-auto text-gray-900 dark:text-gray-50">
   {{ content }}
 </section>
 
 <section>
-  <nav class="post-nav">
-    {% if page.previous %}
-      <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
-        <div class="nav-arrow">Previous</div>
-        <span class="post-title">{{ page.previous.title }}</span>
-      </a>
-    {% endif %} {% if page.next %}
-      <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
-        <div class="nav-arrow">Next</div>
-        <span class="post-title">{{ page.next.title }}</span>
-      </a>
-    {% endif %}
+  <nav
+      class="post-nav max-w-screen-md m-auto grid grid-cols-2 divide-x divide-gray-300 dark:divide-gray-700 dark:text-gray-50 mt-10">
+    <div>
+      {% if page.previous %}
+        <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
+          <div class="nav-arrow text-sm">Previous</div>
+          <span class="post-title font-bold iw-link">{{ page.previous.title }}</span>
+        </a>
+      {% endif %}
+    </div>
 
+    <div class="text-right">
+      {% if page.next %}
+        <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
+          <div class="nav-arrow text-sm">Next</div>
+          <span class="post-title font-bold iw-link">{{ page.next.title }}</span>
+        </a>
+      {% endif %}
+    </div>
   </nav>
 </section>
 
-<footer>
-  <p class="signature">&mdash; Jake Wharton</p>
+<footer class="max-w-screen-md m-auto text-gray-800 dark:text-gray-200 mt-10 mb-8">
+  <div class="text-sm italic mono">&mdash; Md. Mahmudul Hasan Shohag</div>
 </footer>

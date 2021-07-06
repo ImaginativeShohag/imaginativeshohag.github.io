@@ -72,10 +72,6 @@ defaults:
       layout: "default.liquid"
   - scope:
       path: ""
-    values:
-      layout: "default.liquid"
-  - scope:
-      path: ""
       type: "pages"
     values:
       layout: "page.liquid"
