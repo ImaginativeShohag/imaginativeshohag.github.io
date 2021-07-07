@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .text-85p {
+        font-size: 85%;
+    }
+}
+
 .article {
     @apply font-serif
 }
@@ -70,10 +76,6 @@
     @apply px-4 border-l-4 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 mb-4
 }
 
-.article code {
-
-}
-
 .article img {
     @apply rounded-md
 }
@@ -82,8 +84,8 @@
     @apply mt-8 mb-8 border-t-4 border-gray-300 dark:border-gray-700
 }
 
-.article p > code {
-    @apply rounded-md text-sm bg-gray-200 dark:bg-gray-800 py-0.5 px-1.5
+.article code[class*=highlighter] {
+    @apply rounded-md text-85p bg-gray-200 dark:bg-gray-800 py-0.5 px-1.5
 }
 
 .article div.highlight {
