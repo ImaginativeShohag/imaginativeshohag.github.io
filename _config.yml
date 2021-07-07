@@ -19,7 +19,7 @@ author:
 domain: imaginativeshohag.github.io
 url: https://imaginativeshohag.github.io
 baseurl: "" # leave blank if not wished
-permalink: "https://imaginativeshohag.github.io/"
+permalink: https://imaginativeshohag.github.io/
 
 markdown: kramdown
 kramdown:
@@ -43,6 +43,7 @@ exclude:
   - node_modules
   - yarn.lock
   - src
+  - LICENSE
 
 compress_html:
   clippings: all

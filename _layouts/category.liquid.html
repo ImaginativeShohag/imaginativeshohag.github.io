@@ -4,7 +4,7 @@ layout: default.liquid
 
 <section class="posts max-w-screen-md m-auto text-gray-900 dark:text-gray-50">
 
-  <h1 class="title text-3xl font-bold mb-8 text-center">{{ page.category | capitalize }}</h1>
+  <h1 class="title text-3xl font-bold mb-8 font-mono text-center">{{ page.category | capitalize }}</h1>
 
   <ul class="mt-8 mb-16 text-gray-900 dark:text-gray-50">
     {% for post in site.posts %}
@@ -33,7 +33,7 @@ layout: default.liquid
   <div class="text-sm">
     {% assign categories = site.categories | sort %}
     {% for category in categories %}
-      <a class="font-bold inline-block font-mono iw-link rounded-full mx-0.5 my-1 py-2 px-4 bg-gray-200 dark:bg-gray-800" href=" {{ site.baseurl }}/category/{{ category | first | slugify }}/">
+      <a class="font-bold font-mono inline-block font-mono iw-link rounded-full mx-0.5 my-1 py-2 px-4 bg-gray-200 dark:bg-gray-800" href=" {{ site.baseurl }}/category/{{ category | first | slugify }}/">
         {{ category[0] | replace: '-', ' ' | capitalize }} <span class="text-gray-800 dark:text-gray-200">({{ category | last | size }})</span>
       </a>
     {% endfor %}

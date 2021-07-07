@@ -7,11 +7,11 @@
 }
 
 .article h1 {
-    @apply font-sans text-3xl font-bold border-b-2 pb-1.5 mt-6 mb-4
+    @apply font-sans text-3xl font-bold border-b border-gray-300 dark:border-gray-700 pb-1.5 mt-6 mb-4
 }
 
 .article h2 {
-    @apply font-sans text-2xl font-bold border-b-2 pb-1.5 mt-6 mb-4
+    @apply font-sans text-2xl font-bold border-b border-gray-300 dark:border-gray-700 pb-1.5 mt-6 mb-4
 }
 
 .article h3 {
@@ -67,7 +67,7 @@
 }
 
 .article blockquote {
-    @apply px-4 border-l-4 text-gray-600 dark:text-gray-400 mb-4
+    @apply px-4 border-l-4 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 mb-4
 }
 
 .article code {
@@ -79,7 +79,7 @@
 }
 
 .article hr {
-    @apply mt-6 mb-6
+    @apply mt-8 mb-8 border-t-4 border-gray-300 dark:border-gray-700
 }
 
 .article p > code {
