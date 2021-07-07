@@ -10,19 +10,19 @@ My personal weblog.
 ## Development
 
 ```shell
-yarn install
+npm install
 bundle install
 bundle update github-pages
 
-# Compile CSS and Compile Site
+# Compile CSS
 cd src/tailwindcss
-./build.sh
-bundle exec jekyll build
+./build.sh # Compile CSS
+./watch.sh # Compile CSS & Watch for changes to recompile
 
-# Compile & Watch CSS and Run Server & Watch
-cd src/tailwindcss
-./watch.sh
-bundle exec jekyll serve
+# Build Site
+cd <site-root-folder>
+bundle exec jekyll build --drafts # Build site
+bundle exec jekyll serve --drafts # Build site & Watch
 ```
 
 ## Note

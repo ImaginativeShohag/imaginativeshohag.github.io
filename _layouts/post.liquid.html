@@ -20,7 +20,7 @@ layout: default.liquid
 
   <div class="tags text-sm">
     {% for tag in page.tags %}
-      <a class="font-bold font-mono iw-link" href="{{ site.baseurl }}/tag/{{ tag }}">#{{ tag }}</a>
+      <a class="font-bold font-mono iw-link" href="{{ site.baseurl }}/tag/{{ tag }}"><span class="opacity-50">#</span>{{ tag }}</a>
     {% endfor %}
   </div>
 </section>
