@@ -5,6 +5,7 @@ title: Template for Post
 excerpt: This is a template for post.
 tags: template sample
 categories: template
+issue_id: 0
 ---
 
 # Post Type

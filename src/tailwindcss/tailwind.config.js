@@ -21,11 +21,7 @@ module.exports = {
             black: colors.black,
             white: colors.white,
             gray: colors.trueGray,
-            indigo: colors.indigo,
             red: colors.rose,
-            yellow: colors.amber,
-            green: colors.emerald,
-            blue: colors.blue,
         },
         container: {
             center: true,
