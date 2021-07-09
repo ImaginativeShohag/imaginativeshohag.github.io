@@ -15,6 +15,23 @@ author:
   twitter: shohag_iw
   email: imaginativeshohag@email.com
 
+# Jekyll SEO Tag
+twitter:
+  username: shohag_iw
+  card: summary
+
+facebook:
+  publisher: https://www.facebook.com/Imaginative.World.BD
+  admins: https://www.facebook.com/imaginativeshohag
+
+social:
+  name: Md. Mahmudul Hasan Shohag
+  links:
+    - https://twitter.com/shohag_iw
+    - https://www.facebook.com/imaginativeshohag
+    - https://www.linkedin.com/in/mahmudulhasanshohag
+    - https://github.com/imaginativeshohag
+
 # URL settings
 domain: imaginativeshohag.github.io
 url: https://imaginativeshohag.github.io
@@ -58,6 +75,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-seo-tag
 
 collections:
   pages:

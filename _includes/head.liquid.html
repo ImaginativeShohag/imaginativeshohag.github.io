@@ -4,7 +4,6 @@
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css?v={{ 'now' | date: "%y%m%d%H%M%S" }}">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
   <title>
     {% if page.tag or page.title %}
@@ -45,5 +44,7 @@
     {% endcapture %}
     {{ include_to_scssify | scssify }}
   </style>
+
+  {% seo %}
 
 </head>

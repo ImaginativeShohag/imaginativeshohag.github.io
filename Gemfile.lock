@@ -142,7 +142,6 @@ GEM
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
-    jekyll-postcss (0.4.1)
     jekyll-readme-index (0.3.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
@@ -278,8 +277,8 @@ DEPENDENCIES
   github-pages
   jekyll
   jekyll-paginate
-  jekyll-postcss
   jekyll-relative-links
+  jekyll-seo-tag
   jekyll-sitemap
 
 BUNDLED WITH

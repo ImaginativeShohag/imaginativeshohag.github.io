@@ -27,7 +27,7 @@ bundle exec jekyll serve --drafts # Build site & Watch
 
 ## Note
 
-All the `.html` files are prefixed with `.liquid.html` or `-liquid.html` and set those file types as Liquid in the IDE. So that the IDE can give the right syntax highlighting and code formatting.
+All the files with front matter are prefixed with `.liquid.html`, `.liquid.xml` or `.liquid.json` etc. I also set those file types as Liquid in the IDE. So that the IDE can give the right syntax highlighting and code formatting.
 
 ## Licence
 

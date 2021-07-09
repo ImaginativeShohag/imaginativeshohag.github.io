@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: feed.json
 ---
 {
     "version": "https://jsonfeed.org/version/1",
@@ -22,7 +23,7 @@ layout: null
         {
             "id": "{{ post.url | absolute_url | sha1 }}",
             "title": {{ post.title | jsonify }},
-            "summary": {{ post.description | jsonify }},
+            "summary": {{ post.excerpt | jsonify }},
             "content_text": {{ post.content | strip_html | strip_newlines | jsonify }},
             "content_html": {{ post.content | strip_newlines | jsonify }},
             "url": "{{ post.url | absolute_url }}",
