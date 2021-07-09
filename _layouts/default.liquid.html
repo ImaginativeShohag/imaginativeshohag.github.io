@@ -20,7 +20,7 @@ layout: compress
 </script>
 
 
-<body class="container bg-gray-50 dark:bg-gray-900">
+<body class="container bg-gray-50 dark:bg-gray-900 transition-colors">
 
 <main class="m-8">
   <header class="flex max-w-screen-md m-auto justify-between items-center pt-2 pb-8">
@@ -34,7 +34,11 @@ layout: compress
     {% if page.layout == 'post.liquid' %}
       <div class="text-gray-900 dark:text-gray-50">
         <a class="" href="/blog" title="Blogs">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+               class="bi bi-arrow-left-short inline-block w-6 h-6 hover:text-red-500" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+          </svg>
         </a>
       </div>
     {% endif %}
@@ -46,7 +50,10 @@ layout: compress
     </div>
   </header>
 
-  {% include anchor_headings.liquid.html html=content anchorBody="<i class=\"fa fa-link\" aria-hidden=\"true\"></i>" anchorClass="anchor" %}
+  {% include anchor_headings.liquid.html html=content anchorBody='<svg xmlns="http://www.w3.org/2000/svg" width=1em height=1em fill="currentColor" class="bi bi-link-45deg inline-block" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+</svg>' anchorClass="anchor" %}
 </main>
 
 <script>

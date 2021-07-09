@@ -109,7 +109,7 @@
 }
 
 .iw-link {
-    @apply text-red-500 hover:text-red-700
+    @apply text-red-500 hover:text-red-700 transition-colors
 }
 
 h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {

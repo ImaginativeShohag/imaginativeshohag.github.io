@@ -29,6 +29,7 @@ kramdown:
 exclude:
   - .jekyll-cache
   - .obsidian
+  - .idea
   - src
   - Gemfile
   - Gemfile.lock
