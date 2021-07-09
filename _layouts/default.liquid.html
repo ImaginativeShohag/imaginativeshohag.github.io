@@ -85,19 +85,4 @@ layout: compress
 
 </body>
 
-{% if page.url == '/blog' %}
-  <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
-  <script>
-      var sjs = SimpleJekyllSearch({
-          searchInput: document.getElementById('search-input'),
-          resultsContainer: document.getElementById('search-results'),
-          json: '{{ site.baseurl }}/search.json',
-          searchResultTemplate: '<li class="my-2 font-bold text-red-500 hover:text-red-700"><a href="{url}">{title}</a></li>',
-          noResultsText: 'No results found..',
-          limit: 10,
-          fuzzy: true,
-      })
-  </script>
-{% endif %}
-
 </html>

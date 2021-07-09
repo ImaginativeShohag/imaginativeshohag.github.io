@@ -82,6 +82,11 @@ defaults:
     values:
       layout: "post.liquid"
 
+post_types:
+  standard: "standard"
+  link: "link"
+  quote: "quote"
+
 relative_links:
   enabled: true
   collections: false

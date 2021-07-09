@@ -9,18 +9,7 @@ layout: default.liquid
   <ul class="mt-8 mb-16 text-gray-900 dark:text-gray-50">
     {% for post in site.posts %}
       {% if post.tags contains page.tag %}
-        <li class="my-3">
-          <time class="font-mono text-xs block md:inline"
-                datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time>
-          <a class="md:ml-2 font-bold text-red-500 hover:text-red-700"
-             href="{% if post.external %}{{ post.blog_link }}{% else %}{{ site.baseurl }}{{ post.url }}{% endif %}">
-            {% if post.external %}<i class="fa fa-external-link-square" aria-hidden="true"></i>{% endif %}
-            {{ post.title }}
-          </a>
-          {% if post.external %}
-            <span class="block md:inline text-xs italic">— <span class="font-mono text-xs">{{ post.blog }}</span></span>
-          {% endif %}
-        </li>
+        {% include post_item.liquid.html %}
       {% endif %}
     {% endfor %}
   </ul>
