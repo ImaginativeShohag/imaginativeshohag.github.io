@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: 'Baloo Da 2', 'Noto Sans Bengali', 'Kalpurush', 'Siyam Rupali', 'SolaimanLipi';
+        unicode-range: U+0980-09FF
+    }
+}
+
 @layer utilities {
     .text-85p {
         font-size: 85%;
