@@ -45,6 +45,7 @@ kramdown:
 
 exclude:
   - .jekyll-cache
+  - .sass-cache
   - .obsidian
   - .idea
   - src
