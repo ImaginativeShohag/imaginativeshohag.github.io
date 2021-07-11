@@ -5,6 +5,7 @@ title: Template for Post
 excerpt: This is a template for post.
 tags: template sample
 categories: template
+image: /assets/image/me.png
 issue_id: 0
 ---
 
@@ -96,5 +97,7 @@ Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod  tem
 | col 3 is      | right-aligned right-aligned right-aligned right-aligned right-aligned right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
+
+# Image
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)

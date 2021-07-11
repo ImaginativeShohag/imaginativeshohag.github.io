@@ -16,14 +16,19 @@ bundle update github-pages
 
 # Compile CSS
 cd src/tailwindcss
-./build.sh # Compile CSS
-./watch.sh # Compile CSS & Watch for changes to recompile
+sh build.sh # Compile CSS
+sh watch.sh # Compile CSS & Watch for changes to recompile
 
 # Build Site
 cd <site-root-folder>
 bundle exec jekyll build --drafts # Build site
 bundle exec jekyll serve --drafts # Build site & Watch
 ```
+
+### Utilities
+
+* `utils/create_categories.sh` : Create categories with one command.
+* `utils/create_tags.sh` : Create tags with one command.
 
 ## Note
 

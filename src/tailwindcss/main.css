@@ -84,11 +84,11 @@ a {
 }
 
 .article blockquote {
-    @apply px-4 border-l-4 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 mb-4
+    @apply px-4 border-l-4 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 mb-4 py-2
 }
 
 .article img {
-    @apply rounded-md
+    @apply rounded-md mx-auto
 }
 
 .article hr {
@@ -97,6 +97,10 @@ a {
 
 .article code[class*=highlighter] {
     @apply rounded-md text-85p bg-gray-200 dark:bg-gray-800 py-0.5 px-1.5
+}
+
+.article pre.highlight {
+    @apply overflow-x-auto
 }
 
 .article div.highlight {
@@ -119,10 +123,6 @@ a {
     @apply font-bold
 }
 
-.iw-link {
-    @apply transition-colors text-red-500 hover:text-red-700
-}
-
 h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
     @apply hidden
 }
@@ -136,4 +136,18 @@ h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover
 
 .anchor {
     @apply transition-colors text-red-500 hover:text-red-700
+}
+
+/* ********************************
+ * General
+ ******************************** */
+
+.iw-link {
+    @apply transition-colors text-red-500 hover:text-red-700
+}
+
+svg.bi {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
 }

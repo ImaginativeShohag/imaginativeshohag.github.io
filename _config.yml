@@ -62,6 +62,7 @@ exclude:
   - yarn.lock
   - src
   - LICENSE
+  - utils
 
 compress_html:
   clippings: all
