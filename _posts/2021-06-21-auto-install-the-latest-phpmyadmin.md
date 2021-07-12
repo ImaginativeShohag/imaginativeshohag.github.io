@@ -1,7 +1,7 @@
 ---
 layout: post.liquid
 type: link
-title: "How to create a LAMP server for PHP development"
+title: "Let’s auto-install the latest phpMyAdmin with one command"
 excerpt: "I created a script, which will automatically fetch, install and configure the phpMyAdmin to your Ubuntu machine."
 tags: ubuntu php phpmyadmin terminal
 categories: php
