@@ -5,7 +5,7 @@ title: Template for Post
 excerpt: This is a template for post.
 tags: template sample
 categories: template
-image: /assets/image/me.png
+image: /assets/image/default_cover_image.png
 issue_id: 0
 ---
 
