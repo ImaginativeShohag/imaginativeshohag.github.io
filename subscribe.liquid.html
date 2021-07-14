@@ -1,0 +1,44 @@
+---
+layout: default.liquid
+permalink: /subscribe.html
+image: /assets/image/default_cover_image.png
+---
+
+<section class="max-w-screen-md m-auto" id="intro">
+
+  <h1 class="text-2xl font-bold text-center my-8">
+    Subscribe for Latest Post Notification
+  </h1>
+
+  <div class="max-w-screen-sm m-auto">
+    <form action="https://www.getrevue.co/profile/shohag/add_subscriber" method="post" id="revue-form" name="revue-form">
+      <div class="my-4">
+        <label for="member_email">Email address</label>
+        <input class="revue-form-field form-input rounded-xl block bg-white dark:bg-gray-800 h-8 w-full p-4 focus:outline-none ring ring-gray-200 dark:ring-gray-700 focus:ring focus:ring-red-500 dark:focus:ring-red-500 mt-2" placeholder="Your email address..." type="email" name="member[email]"
+               id="member_email">
+      </div>
+      <div class="my-4">
+        <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
+        <input class="revue-form-field form-input rounded-xl block bg-white dark:bg-gray-800 h-8 w-full p-4 focus:outline-none ring ring-gray-200 dark:ring-gray-700 focus:ring focus:ring-red-500 dark:focus:ring-red-500 mt-2" placeholder="First name... (Optional)" type="text" name="member[first_name]"
+               id="member_first_name">
+      </div>
+      <div class="my-4">
+        <label for="member_last_name">Last name <span class="optional">(Optional)</span></label>
+        <input class="revue-form-field form-input rounded-xl block bg-white dark:bg-gray-800 h-8 w-full p-4 focus:outline-none ring ring-gray-200 dark:ring-gray-700 focus:ring focus:ring-red-500 dark:focus:ring-red-500 mt-2" placeholder="Last name... (Optional)" type="text" name="member[last_name]"
+               id="member_last_name">
+      </div>
+
+      <div class="text-center mt-10 mb-8">
+        <input class="iw-btn" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+      </div>
+
+      <div class="text-center mb-4">By subscribing, you agree with Revue’s
+        <a class="iw-link" target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a>
+        and <a class="iw-link" target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.
+      </div>
+    </form>
+  </div>
+
+
+</section>
+
