@@ -84,7 +84,11 @@ a {
 }
 
 .article blockquote {
-    @apply px-4 border-l-4 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 mb-4 py-2
+    @apply text-2xl border-l-4 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 mb-4 px-4 py-2
+}
+
+.article blockquote > :last-child {
+    @apply mb-0
 }
 
 .article img {
@@ -123,19 +127,20 @@ a {
     @apply font-bold
 }
 
-h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
-    @apply hidden
-}
-
 /* ********************************
  * Anchor
  ******************************** */
+
+h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
+    @apply opacity-0
+}
+
 h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover .anchor {
-    @apply inline
+    @apply opacity-100
 }
 
 .anchor {
-    @apply transition-colors text-red-500 hover:text-red-700
+    @apply transition-colors transition-opacity text-red-500 hover:text-red-700
 }
 
 /* ********************************
