@@ -3,10 +3,11 @@
   "lockfileVersion": 1,
   "dependencies": {
     "fuzzysearch": "1.0.3",
-    "simple-jekyll-search": "^1.9.2"
+    "simple-jekyll-search": "^1.9.2",
+    "viewerjs": "^1.10.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.3.1",
     "tailwindcss": "^2.2.4"
   }
 }

@@ -100,4 +100,13 @@ Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod  tem
 
 # Image
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Single Image](https://picsum.photos/1080/1080?1)
+
+<img class="img-viewer" src="https://picsum.photos/1080/1080?2" alt="img1">
+
+# Image Gallery
+
+<div class="iw-gallery-2">
+    <img class="img-viewer" src="https://picsum.photos/1080/1080?3" alt="img1">
+    <img class="img-viewer" src="https://picsum.photos/1080/1080?4" alt="img2">
+</div>
