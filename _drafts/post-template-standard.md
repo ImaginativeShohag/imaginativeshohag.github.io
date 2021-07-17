@@ -5,7 +5,7 @@ title: Template for Post
 excerpt: This is a template for post.
 tags: template sample
 categories: template
-image: /assets/image/default_cover_image.png
+image: /assets/image/default_cover_image.svg
 issue_id: 0
 ---
 
@@ -48,8 +48,8 @@ fun main(args: Array<String>) {
 > পূর্ণিমার চাঁদ তার মুকুট হতে চায় —
 >
 > সে যে আমার কমলিওয়ালা — কমলিওয়ালা।।
->
-> — কাজী নজরুল ইসলাম
+> 
+> <cite>[কাজী নজরুল ইসলাম](https://imaginativeshohag.github.io)</cite>
 
 > Give me a— 
 >
@@ -100,4 +100,13 @@ Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod  tem
 
 # Image
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Single Image](https://picsum.photos/1080/1080?1)
+
+<img class="img-viewer" src="https://picsum.photos/1080/1080?2" alt="img1">
+
+# Image Gallery
+
+<div class="iw-gallery-2">
+    <img class="img-viewer" src="https://picsum.photos/1080/1080?3" alt="img1">
+    <img class="img-viewer" src="https://picsum.photos/1080/1080?4" alt="img2">
+</div>

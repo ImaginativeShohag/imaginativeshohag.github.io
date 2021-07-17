@@ -9,3 +9,5 @@ source_name: টেকমাস্টার ব্লগ
 source_link: https://techmasterblog.com/25785/%e0%a6%a4%e0%a6%a5%e0%a7%8d%e0%a6%af-%e0%a6%ac%e0%a6%bf%e0%a6%9c%e0%a7%8d%e0%a6%9e%e0%a6%be%e0%a6%a8%e0%a7%80%e0%a6%a6%e0%a7%87%e0%a6%b0-%e0%a6%96%e0%a7%81%e0%a6%9c%e0%a6%9b%e0%a7%87-%e0%a6%b8
 ---
 
+{% include post_type_link_content.liquid.html %}
+

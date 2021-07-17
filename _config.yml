@@ -3,13 +3,15 @@ title: Imaginative World
 description: >-
   Just another weblog by Md. Mahmudul Hasan Shohag.
 lang: en-US
-timezone: Dhaka
+timezone: Asia/Dhaka
 repo: https://github.com/ImaginativeShohag/imaginativeshohag.github.io # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 
 author:
   name: Md. Mahmudul Hasan Shohag
   bio: Software Engineer, Enjoying to the fullest.
+  avatar: https://imaginativeshohag.github.io/assets/image/me.png
+  url: https://imaginativeshohag.github.io
   username: ImaginativeShohag
   github: ImaginativeShohag
   twitter: shohag_iw
