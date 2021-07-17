@@ -5,7 +5,7 @@ title: "Kotlin - কেন শিখবেন? কিভাবে শুরু �
 excerpt: "বর্তমানে Java থেকে Kotlin এ আসার প্রয়োজনীয়তা এবং দ্রুত Kotlin আয়ত্তে কিভাবে আনবেন তা নিয়েই আলোচনা রয়েছে আজকের এ লেখায়।"
 tags: kotlin java inspiration jetpack-compose
 categories: android kotlin
-image: /assets/image/2021/07/kotlin-why-learn-how-to-start-cover.svg
+image: /assets/image/2021/07/kotlin-why-learn-how-to-start-cover.png
 issue_id: 3
 ---
 
