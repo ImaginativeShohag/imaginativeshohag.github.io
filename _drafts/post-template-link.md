@@ -8,3 +8,5 @@ categories: template
 source_name: শূন্য বিন্দু
 source_link: https://shunnobindu.wordpress.com
 ---
+
+{% include post_type_link_content.liquid.html %}
