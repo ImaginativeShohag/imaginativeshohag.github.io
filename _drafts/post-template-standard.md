@@ -5,7 +5,7 @@ title: Template for Post
 excerpt: This is a template for post.
 tags: template sample
 categories: template
-image: /assets/image/default_cover_image.png
+image: /assets/image/default_cover_image.svg
 issue_id: 0
 ---
 
@@ -48,8 +48,8 @@ fun main(args: Array<String>) {
 > পূর্ণিমার চাঁদ তার মুকুট হতে চায় —
 >
 > সে যে আমার কমলিওয়ালা — কমলিওয়ালা।।
->
-> — কাজী নজরুল ইসলাম
+> 
+> <cite>[কাজী নজরুল ইসলাম](https://imaginativeshohag.github.io)</cite>
 
 > Give me a— 
 >

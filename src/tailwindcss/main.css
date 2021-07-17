@@ -4,8 +4,9 @@
 
 @layer base {
     @font-face {
-        font-family: 'Baloo Da 2', 'Noto Sans Bengali', 'Kalpurush', 'Siyam Rupali', 'SolaimanLipi';
+        font-family: 'Noto Sans Bengali', 'Siyam Rupali','Kalpurush',  'SolaimanLipi';
         unicode-range: U+0980-09FF
+        /* Bangla Range (source: http://www.unicode.org/charts/PDF/U0980.pdf) */
     }
 }
 
@@ -51,7 +52,7 @@ a {
     @apply mt-0 mb-4
 }
 
-.article p > a {
+.article a {
     @apply text-red-500 hover:underline
 }
 
@@ -89,6 +90,15 @@ a {
 
 .article blockquote > :last-child {
     @apply mb-0
+}
+
+.article blockquote cite {
+    @apply text-base
+}
+
+.article blockquote cite::before {
+    content: "—";
+    @apply mr-2
 }
 
 .article img {
