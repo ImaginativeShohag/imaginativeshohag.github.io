@@ -149,8 +149,10 @@ h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover
     @apply opacity-100
 }
 
-.anchor {
-    @apply transition-colors transition-opacity text-red-500 hover:text-red-700
+a.anchor {
+    margin-left: -1em;
+    padding-right: 0.5em;
+    @apply absolute transition text-gray-400 dark:text-gray-500 hover:text-red-500 dark:hover:text-red-500 hover:no-underline
 }
 
 /* ********************************
