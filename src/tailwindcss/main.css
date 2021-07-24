@@ -4,7 +4,7 @@
 
 @layer base {
     @font-face {
-        font-family: 'Noto Sans Bengali', 'Siyam Rupali','Kalpurush',  'SolaimanLipi';
+        font-family: 'Noto Sans Bengali', 'Siyam Rupali', 'Kalpurush', 'SolaimanLipi';
         unicode-range: U+0980-09FF
         /* Bangla Range (source: http://www.unicode.org/charts/PDF/U0980.pdf) */
     }
@@ -149,8 +149,10 @@ h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover
     @apply opacity-100
 }
 
-.anchor {
-    @apply transition-colors transition-opacity text-red-500 hover:text-red-700
+a.anchor {
+    margin-left: -1em;
+    padding-right: 0.5em;
+    @apply absolute transition text-gray-400 dark:text-gray-500 hover:text-red-500 dark:hover:text-red-500 hover:no-underline
 }
 
 /* ********************************
@@ -168,7 +170,8 @@ svg.bi {
 }
 
 .iw-btn {
-    @apply transition-colors cursor-pointer bg-transparent border-2 border-red-500 hover:bg-red-500 hover:text-white rounded text-gray-900 dark:text-gray-50 px-4 py-2 font-bold
+    @apply transition-colors cursor-pointer bg-transparent border-2 border-red-500 hover:bg-red-500 hover:text-white
+    rounded text-gray-900 dark:text-gray-50 px-4 py-2 font-bold inline-block
 }
 
 /* ********************************

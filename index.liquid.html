@@ -7,16 +7,23 @@ image: /assets/image/default_cover_image.png
 <section class="max-w-screen-md m-auto" id="intro">
   <div class="bio">
     <p class="text-3xl dark:text-gray-50">Assalamu Aalaikum, Peace To You!</p>
-    <p class="text-4xl dark:text-gray-50 font-bold my-2">I'm Md. Mahmudul Hasan Shohag.</p>
+    <p class="text-4xl dark:text-gray-50 my-2">I'm <strong>Md. Mahmudul Hasan Shohag</strong>.</p>
     <p class="text-2xl dark:text-gray-50 font-bold">Learner, Programmer, Blogger.
     </p>
-    <p class="text-2xl dark:text-gray-50">Trying to be a better <span class="font-bold">Muslim</span> and a better <span class="font-bold">Programmer</span>.</p>
+    <p class="text-2xl dark:text-gray-50">Trying to be a better <span class="font-bold">Muslim</span> and a better <span
+          class="font-bold">Programmer</span>.</p>
+    <p id="trademark-notice" class="text-sm mt-5 italic hidden"><strong>Imaginative World</strong> & <strong>imaginativeworld.org</strong>
+      is a trademark of <strong>Md. Mahmudul Hasan Shohag</strong>.</p>
   </div>
 
   <ul class="dark:text-gray-50 mt-5">
     <li class="block sm:inline-block pr-4">
       read <a class="font-bold iw-link"
               href="/blog">Blog</a>
+    </li>
+    <li class="block sm:inline-block pr-4">
+      read <a class="font-bold iw-link"
+              href="https://imaginativeshohag.medium.com/">Medium</a>
     </li>
     <li class="block sm:inline-block pr-4">
       connect <a class="font-bold iw-link"
@@ -48,3 +55,10 @@ image: /assets/image/default_cover_image.png
   </ul>
 </section>
 
+<script>
+    const url = new URL(window.location.href);
+    const source = url.searchParams.get("source");
+    if (source === "imaginativeworld.org") {
+        document.getElementById('trademark-notice').classList.remove("hidden")
+    }
+</script>
