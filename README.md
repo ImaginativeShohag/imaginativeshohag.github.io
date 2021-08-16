@@ -1,6 +1,6 @@
 #  imaginativeshohag.github.io
 
-My personal weblog.
+My another personal weblog.
 
 ## Technologies
 
