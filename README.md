@@ -27,8 +27,8 @@ bundle exec jekyll serve --drafts # Build site & Watch
 
 ### Utilities
 
-* `utils/create_categories.sh` : Create categories with one command.
-* `utils/create_tags.sh` : Create tags with one command.
+* `utils/create_categories.sh` : Create categories with one command. Check the file for usage.
+* `utils/create_tags.sh` : Create tags with one command. Check the file for usage.
 
 ## Note
 

@@ -1,8 +1,8 @@
 ---
 layout: post.liquid
 type: quote
-title: Template for Quote
-excerpt: This is a template for post.
+title: "Template for Quote"
+excerpt: "This is a template for post."
 tags: template sample
 categories: template
 issue_id: 0

@@ -1,8 +1,8 @@
 ---
 layout: post.liquid
 type: standard
-title: Template for Post
-excerpt: This is a template for post.
+title: "Template for Post"
+excerpt: "This is a template for post."
 tags: template sample
 categories: template
 image: /assets/image/default_cover_image.png

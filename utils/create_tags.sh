@@ -5,7 +5,7 @@
 #
 # Usage:
 # cd <to-current-directory>
-# sh create_tags tag1 tag2 tag3
+# sh create_tags.sh tag1 tag2 tag3
 #
 # Copyright (c) 2021 Md. Mahmudul Hasan Shohag (github.com/imaginativeshohag)
 # This free software comes with ABSOLUTELY NO WARRANTY.
