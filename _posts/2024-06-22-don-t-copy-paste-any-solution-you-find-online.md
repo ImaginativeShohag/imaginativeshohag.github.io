@@ -45,6 +45,58 @@ Here you can see `onCreate` is called twice. If I am not wrong it will create mo
 
 I found 2 solutions. One solution will finish the activity if no more back-stack is left, and another one will only allow to call the `popBackStack()` after the screen is in `RESUMED` state.
 
-The extensions are [here](https://gist.github.com/ImaginativeShohag/350674f91dc67ff72b0c7852f24a508d#file-extnavcontroller-kt).
+The extensions are given below:
+
+```kotlin
+import android.app.Activity
+import android.content.Context
+import androidx.lifecycle.Lifecycle
+import androidx.navigation.NavController
+
+/**
+ * Attempts to pop the controller's back stack.
+ * If the back stack is empty, it will finish the activity.
+ *
+ * @param context Activity context.
+ */
+fun NavController.popBackStackOrFinish(context: Context) {
+    if (!popBackStack()) {
+        (context as Activity).finish()
+    }
+}
+
+/**
+ * Attempts to pop the controller's back stack.
+ * It will check the current lifecycle and only allow the pop
+ * if the current state is RESUMED.
+ *
+ * See [reference](https://github.com/google/accompanist/issues/1408#issuecomment-1673011548)
+ */
+fun NavController.popBackStackOrIgnore() {
+    if (currentBackStackEntry?.lifecycle?.currentState == Lifecycle.State.RESUMED) {
+        popBackStack()
+    }
+}
+```
+
+We can also use `dropUnlessResumed {}` like the following. It is related to the `popBackStackOrIgnore()` solution.
+
+```kotlin
+@Composable
+fun DropUnlessResumed() {
+    Button(
+        onClick =
+            dropUnlessResumed {
+                // Run on clicks only when the lifecycle is at least RESUMED.
+                navController.popBackStack()
+            },
+    ) {
+        Text(text = "Go Back")
+    }
+}
+
+```
+
+I added all the solutions to my **Why Not Compose!** app. Check out and run the app from [here](https://github.com/ImaginativeShohag/Why-Not-Compose/blob/a13b819aba7a51ce474ea8f7177b40b3c293b995/popbackstack/src/main/java/org/imaginativeworld/whynotcompose/popbackstack/PopBackStackActivity.kt). You can also try the app from Google Play Store from [here](https://play.google.com/store/apps/details?id=org.imaginativeworld.whynotcompose) (Check the tutorials section from the app).
 
 Enjoy.
